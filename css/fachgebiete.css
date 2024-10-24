@@ -1,0 +1,204 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    color: #E3342F;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 1.25rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #E3342F;
+}
+
+nav ul li a.active {
+    color: #E3342F;
+}
+
+/* Specialties Section */
+.specialties-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    width: 85%; /* Reduced width to fit smaller screens */
+}
+
+.specialty-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    height: 170px;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.specialty-box img {
+    width: 60px; /* Reduced image size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.specialty-box p {
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+}
+
+/* Colors for the boxes */
+.black {
+    background-color: #000000;
+}
+
+.red {
+    background-color: #E3342F;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.875rem;
+    color: #333;
+    margin-top: 1.25rem;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .specialties-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns */
+        grid-gap: 12px;
+    }
+
+    .specialty-box {
+        height: 150px; /* Adjust box height */
+    }
+
+    .specialty-box img {
+        width: 50px; /* Slightly reduce image size */
+    }
+
+    .specialty-box p {
+        font-size: 14px; /* Smaller font for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .specialties-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        width: 100%; /* Use full width */
+        padding: 0 15px; /* Add some side padding */
+    }
+
+    .specialty-box {
+        height: 130px; /* Further reduce height */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        padding: 10px; /* Reduce padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Align nav links vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Space between links */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .logo h1 {
+        font-size: 18px; /* Reduce font size for logo */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    .specialty-box {
+        height: 110px; /* Compact box height for very small screens */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .specialty-box img {
+        width: 40px; /* Further reduce image size */
+    }
+
+    .specialty-box p {
+        font-size: 12px; /* Smaller font for compact screens */
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
