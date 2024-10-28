@@ -104,18 +104,17 @@ nav ul li a.active {
 }
 
 /* Image content */
+.image-content, .goals {
+    width: 47%;
+    margin: 0 0.5rem;
+}
+
 .image-content img {
-    width: 80%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Flexbox layout for "Unsere Ziele" next to image */
-.image-content, .goals {
-    width: 48%;
-    margin: 0 1rem; /* Adjusted margin for space between image and text */
 }
 
 .goals {
