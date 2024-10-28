@@ -98,7 +98,7 @@ nav ul li a.active {
 }
 
 .cta-button:hover {
-    background-color: #D23C2F;
+    background-color: #555;
 }
 
 /* Content section styling */
@@ -150,10 +150,19 @@ footer p {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Stack header elements vertically */
+        padding: 10px; /* Reduce padding */
     }
 
+    nav ul {
+        flex-direction: column; /* Align nav links vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Space between links */
+    }
     .main-banner {
         height: 50vh;
     }
@@ -174,6 +183,10 @@ footer p {
     .content-box h3 {
         font-size: 0.875rem;
     }
+
+    footer {
+        padding: 15px; /* Reduce footer padding */
+    }
 }
 
 @media (max-width: 480px) {
@@ -189,14 +202,22 @@ footer p {
         padding: 0.4rem 0.75rem;
     }
 
+    header {
+        flex-direction: column;
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    header .logo h1 {
+        font-size: 18px; /* Scale down logo text */
+    }
+
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     nav ul li {
-        margin-bottom: 0.5rem;
-        margin-right: 0;
+        margin-bottom: 8px;
     }
 
     .content-box {
@@ -210,5 +231,13 @@ footer p {
 
     .content-box h3 {
         font-size: 0.75rem;
+    }
+
+    footer {
+        padding: 0.75rem; /* Smaller padding for footer */
+    }
+
+    footer p {
+        font-size: 0.625rem; /* Further reduced font size */
     }
 }
