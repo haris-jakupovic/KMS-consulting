@@ -19,14 +19,22 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #f8f8f8;
-    padding: 1.25rem;
+    padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+header .logo img {
+    height: 50px; /* Adjust the height to fit the header */
+    width: auto; /* Maintain aspect ratio */    
+    vertical-align: middle; /* Align the image with the text */
+    overflow: visible;
+}
+
 header .logo h1 {
-    color: #E3342F;
-    font-weight: 700;
+    display: inline-block; /* Keeps the image and text on the same line */
     font-size: 1.5rem;
+    line-height: 40px; /* Matches the logo image height for alignment */
+    vertical-align: middle;
 }
 
 nav ul {
