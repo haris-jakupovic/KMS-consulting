@@ -79,8 +79,13 @@ nav ul li a.active {
     border-radius: 8px;
     height: 170px;
     color: #ffffff;
+    transition: transform 0.3s ease;
     text-align: center;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.specialty-box:hover {
+    transform: translateY(-5px);
 }
 
 .specialty-box img {
@@ -163,16 +168,20 @@ footer p {
         margin-right: 0;
         margin-bottom: 10px; /* Space between links */
     }
+
+    footer {
+        padding: 15px; /* Reduce footer padding */
+    }
 }
 
 @media (max-width: 480px) {
     header {
         flex-direction: column;
-        padding: 10px;
+        padding: 10px; /* Reduce padding on small screens */
     }
 
     header .logo h1 {
-        font-size: 18px; /* Reduce font size for logo */
+        font-size: 18px; /* Scale down logo text */
     }
 
     nav ul {
@@ -198,7 +207,10 @@ footer p {
     }
 
     footer {
-        padding: 15px;
-        font-size: 12px;
+        padding: 0.75rem; /* Smaller padding for footer */
+    }
+
+    footer p {
+        font-size: 0.625rem; /* Further reduced font size */
     }
 }
