@@ -113,13 +113,16 @@ nav ul li a.active {
 
 /* Image content */
 .image-content, .goals {
+    display: flex;
+    justify-content: center;
     width: 30%;
     margin: 0 0.5rem;
 }
 
 .image-content img {
-    width: 100%;
-    max-width: 400px; /* Limits max size on larger screens */
+    display: flex;
+    width: 80%;
+    max-width: 300px; /* Limits max size on larger screens */
     height: auto; /* Maintains aspect ratio */
     object-fit: contain;
     justify-content: center;
@@ -204,8 +207,7 @@ footer p {
     }
 
     .image-content img {
-        max-width: 70vw;
-        height: auto;/* Responsive width scaling */
+        max-width: 90vw; /* Responsive width scaling */
     }
 
     .text-content h2, .goals h2 {
@@ -245,8 +247,7 @@ footer p {
     }
 
     .image-content img {
-        max-width: 50vw;
-        height: auto;/* Further reduced for very small screens */
+        max-width: 80vw; /* Further reduced for very small screens */
     }
 
     .text-content h2, .goals h2 {
