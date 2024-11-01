@@ -221,7 +221,7 @@ footer p {
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Stack header contents vertically */
-        padding: 15px;
+        padding: 10px;
     }
 
     nav ul {
