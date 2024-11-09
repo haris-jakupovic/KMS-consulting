@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
