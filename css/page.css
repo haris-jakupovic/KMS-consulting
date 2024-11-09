@@ -36,6 +36,7 @@ header .logo h1 {
     line-height: 40px; /* Matches the logo image height for alignment */
     vertical-align: middle;
 }
+
 nav ul {
     display: flex;
     list-style-type: none;
@@ -143,7 +144,7 @@ nav ul li a.active {
 footer {
     background-color: #f8f8f8;
     text-align: center;
-    padding: 1.25rem;
+    padding: 1rem;
     font-size: 0.875rem;
     color: #333;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
@@ -169,6 +170,7 @@ footer p {
         margin-right: 0;
         margin-bottom: 10px; /* Space between links */
     }
+    
     .main-banner {
         height: 50vh;
     }
