@@ -68,7 +68,7 @@ nav ul li a.active {
     justify-content: center;
     align-items: center;
     padding: 1.5rem; /* Reduced padding to match */
-    background: url('https://images.unsplash.com/photo-1554232456-8727aae0cfa4?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center / cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1703208177634-38d90da28c5d?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center / cover no-repeat;
     height: calc(100vh - 60px); /* Full viewport minus header/footer */
 }
 
