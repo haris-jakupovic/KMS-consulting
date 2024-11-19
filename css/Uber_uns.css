@@ -90,6 +90,7 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 3rem;
 }
 
 .text-content h2 {
@@ -112,9 +113,10 @@ nav ul li a.active {
 }
 
 .goals {
-    padding-left: 5rem;
-    width: 45%;
+    width: auto; /* Adjusts the width to fit content */
+    margin-right: 0; /* Ensures no extra space is added */
 }
+
 
 .goals h2 {
     font-size: 1.25rem;
@@ -146,10 +148,6 @@ footer p {
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    .image-content img {
-        max-width: 60vw; /* Scale to 60% of the viewport width */
-        height: auto; /* Maintain aspect ratio */
-    }
 
     /* Additional adjustments for other elements if needed */
     .content-container {
@@ -183,13 +181,9 @@ footer p {
         padding: 1rem;
     }
 
-    .image-content, .goals {
+    .goals {
         width: 100%; /* Full width for each section */
         margin: 0.5rem 0; /* Adjust margin for vertical stacking */
-    }
-
-    .image-content img {
-        max-width: 90vw; /* Responsive width scaling */
     }
 
     .text-content h2, .goals h2 {
