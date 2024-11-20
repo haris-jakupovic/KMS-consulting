@@ -1,4 +1,4 @@
-/* General resets */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header styling */
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -24,16 +24,16 @@ header {
 }
 
 header .logo img {
-    height: 50px; /* Adjust the height to fit the header */
-    width: auto; /* Maintain aspect ratio */    
-    vertical-align: middle; /* Align the image with the text */
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
     overflow: visible;
 }
 
 header .logo h1 {
-    display: inline-block; /* Keeps the image and text on the same line */
+    display: inline-block;
     font-size: 1.5rem;
-    line-height: 40px; /* Matches the logo image height for alignment */
+    line-height: 40px;
     vertical-align: middle;
 }
 
@@ -61,80 +61,79 @@ nav ul li a.active {
     color: #E3342F;
 }
 
-/* About section styling */
+/* About Section Styling */
 .about-section {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem; /* Reduced padding to match */
+    padding: 1.5rem;
     background: url('https://images.unsplash.com/photo-1703208177634-38d90da28c5d?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center / cover no-repeat;
-    height: calc(100vh - 60px); /* Full viewport minus header/footer */
+    height: calc(100vh - 60px);
 }
 
-/* Content container wider and centered */
 .content-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1500px; /* Slightly reduced max-width for better scaling */
-    width: 95%;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
     background-color: #ffffff;
-    padding: 1rem; /* Reduced padding */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-/* Text content */
-.text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 3rem;
+/* Firmenprofil Section */
+.firmenprofil {
+    margin-bottom: 2rem;
 }
 
-.text-content h2 {
-    font-size: 1.25rem; /* Matches previous font size */
-    font-weight: bold;
+.firmenprofil h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #E3342F;
     margin-bottom: 0.5rem;
-    color: #333;
     border-bottom: 2px solid #E3342F;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
 }
 
-.text-content ul {
+.firmenprofil ul {
     list-style-type: disc;
-    margin-left: 1.25rem;
+    margin: 0;
+    padding-left: 1.5rem;
 }
 
-.text-content ul li {
+.firmenprofil ul li {
     margin-bottom: 0.5rem;
-    font-size: 0.875rem; /* Reduced font size */
-}
-
-.goals {
-    width: auto; /* Adjusts the width to fit content */
-    margin-right: 0; /* Ensures no extra space is added */
-}
-
-
-.goals h2 {
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1rem;
     color: #333;
+}
+
+/* Unsere Ziele Section */
+.unsere-ziele h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #E3342F;
+    margin-bottom: 0.5rem;
     border-bottom: 2px solid #E3342F;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
 }
 
-.goals ul li {
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
+.unsere-ziele ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.5rem;
 }
 
-/* Footer styling */
+.unsere-ziele ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #f8f8f8;
+    background-color: #fff;
     text-align: center;
     padding: 1rem;
     font-size: 0.875rem;
@@ -146,67 +145,68 @@ footer p {
     margin: 0;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 1200px) {
-
-    /* Additional adjustments for other elements if needed */
     .content-container {
-        max-width: 90%; /* Shrink content width slightly for better fit */
-        padding: 1.25rem; /* Slightly increase padding */
+        max-width: 90%;
+        padding: 1.25rem;
     }
 
-    .text-content h2, .goals h2 {
-        font-size: 1.125rem; /* Adjust heading font size slightly */
+    .firmenprofil h2, .unsere-ziele h2 {
+        font-size: 1.25rem; /* Slightly smaller font for headings */
     }
+
+    .firmenprofil ul li, .unsere-ziele ul li {
+        font-size: 0.95rem; /* Adjusted font size for smaller screens */
+    }
+    
 }
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stack header elements vertically */
-        padding: 10px; /* Reduce padding */
+        flex-direction: column;
+        padding: 10px;
     }
-    
+
     nav ul {
-        flex-direction: column; /* Align nav links vertically */
+        flex-direction: column;
         align-items: center;
     }
-    
+
     nav ul li {
         margin-right: 0;
-        margin-bottom: 10px; /* Space between links */
+        margin-bottom: 10px;
     }
 
     .content-container {
-        flex-direction: column; /* Stack elements vertically */
         padding: 1rem;
     }
 
-    .goals {
-        width: 100%; /* Full width for each section */
-        margin: 0.5rem 0; /* Adjust margin for vertical stacking */
+    .firmenprofil, .unsere-ziele {
+        width: 100%;
     }
 
-    .text-content h2, .goals h2 {
-        font-size: 1rem; /* Reduced for mobile */
+    .firmenprofil h2, .unsere-ziele h2 {
+        font-size: 1.125rem;
     }
 
-    .text-content ul, .goals ul {
-        font-size: 0.875rem; /* Font size for smaller screens */
+    .firmenprofil ul, .unsere-ziele ul {
+        font-size: 0.875rem;
     }
 
     footer {
-        padding: 15px; /* Reduce footer padding */
+        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     header {
         flex-direction: column;
-        padding: 10px; /* Reduce padding on small screens */
+        padding: 10px;
     }
 
     header .logo h1 {
-        font-size: 18px; /* Scale down logo text */
+        font-size: 18px;
     }
 
     nav ul {
@@ -219,26 +219,23 @@ footer p {
     }
 
     .content-container {
-        padding: 0.75rem; /* Further reduced padding */
+        padding: 0.75rem;
     }
 
-    .image-content img {
-        max-width: 80vw; /* Further reduced for very small screens */
+    .firmenprofil h2, .unsere-ziele h2 {
+        font-size: 1rem;
     }
 
-    .text-content h2, .goals h2 {
-        font-size: 0.875rem; /* Further reduced header size */
+    .firmenprofil ul li, .unsere-ziele ul li {
+        font-size: 0.75rem;
     }
 
-    .text-content ul li, .goals ul li {
-        font-size: 0.75rem; /* Adjust list item size for small screens */
-    }
 
     footer {
-        padding: 0.75rem; /* Smaller padding for footer */
+        padding: 0.75rem;
     }
 
     footer p {
-        font-size: 0.625rem; /* Further reduced font size */
+        font-size: 0.625rem;
     }
 }
