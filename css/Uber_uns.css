@@ -110,6 +110,10 @@ nav ul li a.active {
 }
 
 /* Unsere Ziele Section */
+.unsere-ziele {
+    text-align: center; /* Center all text inside the section */
+}
+
 .unsere-ziele h2 {
     text-align: center;
     font-size: 1.5rem;
@@ -120,15 +124,18 @@ nav ul li a.active {
 }
 
 .unsere-ziele ul {
-    list-style-type: disc;
-    margin: 0;
-    padding-left: 1.5rem;
+    display: inline-block; /* Make the list inline for centering */
+    text-align: center; /* Keep text aligned within the list itself */
+    padding: 0; /* Remove extra padding */
+    margin: 0 auto; /* Center the list within the container */
 }
 
 .unsere-ziele ul li {
-    margin-bottom: 0.5rem;
+    display: list-item; /* Ensure bullet points are correctly displayed */
+    margin: 0.5rem 0; /* Add spacing between items */
+    list-style-position: inside; /* Place bullets next to text */
     font-size: 1rem;
-    color: #333;
+    color: #333; /* Keep a consistent color */
 }
 
 /* Footer Styling */
