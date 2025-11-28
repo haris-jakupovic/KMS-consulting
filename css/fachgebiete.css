@@ -117,7 +117,7 @@ nav ul li a.active {
 }
 
 .pen {
-    font-family: "Oswald", "Arial Black", sans-serif;
+    font-family: "JetBrains Mono", "Lucida Console", monospace;
 }
 
 /* Footer */
@@ -225,6 +225,7 @@ footer p {
         font-size: 0.625rem; /* Further reduced font size */
     }
 }
+
 
 
 
