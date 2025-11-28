@@ -116,6 +116,10 @@ nav ul li a.active {
     background-color: #E3342F;
 }
 
+.pen {
+    background-color: yellow;
+}
+
 /* Footer */
 footer {
     background-color: #f8f8f8;
@@ -221,3 +225,4 @@ footer p {
         font-size: 0.625rem; /* Further reduced font size */
     }
 }
+
